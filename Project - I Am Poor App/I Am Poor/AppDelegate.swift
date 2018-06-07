@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  I Am Poor
+//  Project - I Am Poor App
 //
-//  Created by Angela Yu on 24/08/2016.
-//
+//  Created by Rudrank Riyam on 07/06/18.
+//  Copyright © 2018 iOS-Projects. All rights reserved.//
 //
 
 import UIKit
