@@ -7,18 +7,42 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var darkBlueBackGround: UIImageView!
+    @IBOutlet weak var powerButton: UIButton!
+    @IBOutlet weak var cloudHolder: UIView!
+    @IBOutlet weak var rocket: UIImageView!
+    @IBOutlet weak var hustleModeLabel: UILabel!
+    @IBOutlet weak var OnLabel: UILabel!
+    
+    var player: AVAudioPlayer!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func powerButtonPressed(_ sender: Any) {
+        cloudHolder.isHidden = false
+        darkBlueBackGround.isHidden = true
+        powerButton.isHidden = true
     }
+    
 
 
 }
