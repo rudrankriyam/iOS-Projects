@@ -11,4 +11,7 @@ Learnt -
 * Basic AV Audio Player
 * Basic Animation
 
+Credits - [iOS 11 & Swift 4: From Beginner to Paid Professional™](https://www.udemy.com/devslopes-ios11)
+
+
 ![alt text](https://github.com/snuff4/iOS-Projects/blob/master/Project%20-%20Hustle%20Mode%20App/HustleModeApp-Potrait.png)
