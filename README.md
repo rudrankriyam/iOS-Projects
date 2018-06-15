@@ -1,8 +1,10 @@
 # iOS Projects Repository   
 
-Hi! I am Rudrank Riyam, studying in University of Delhi, India; and embarked my iOS development journey.
+Hi! I am [Rudrank Riyam](https://www.linkedin.com/in/rudrankriyam/), studying in University of Delhi, India; and embarked my iOS development journey.
 
 This repository contains iOS applications for learning purposes.
+
+MOST of the projects are work in progress, and should be completed by the end of the summer.
 
 ## Learning Resources 
  
@@ -14,3 +16,7 @@ This repository contains iOS applications for learning purposes.
 * [Youtube - Jared Davidson](https://www.youtube.com/user/Archetapp)
 * [Youtube - Brian Advent](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw)
 * [Youtube - Mark Moeykens](https://www.youtube.com/channel/UChH6WbyYeX0INJjrK2-6WSg)
+* [Youtube - David Tran](https://www.youtube.com/channel/UCvPFGq6luCqAVGiFpzTvkIA)
+* [Youtube- CodeWithChris](https://www.youtube.com/user/CodeWithChris)
+* [Youtube - GeekyLemon](https://www.youtube.com/user/GeekyLemon)
+* [Youtube - The Swift Guy](https://www.youtube.com/channel/UC-d1NWv5IWtIkfH47ux4dWA)
