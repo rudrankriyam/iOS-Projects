@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0D33DFD820D361C900ADD378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D33DFD720D361C900ADD378 /* AppDelegate.swift */; };
-		0D33DFDA20D361C900ADD378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D33DFD920D361C900ADD378 /* ViewController.swift */; };
 		0D33DFDD20D361C900ADD378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D33DFDB20D361C900ADD378 /* Main.storyboard */; };
 		0D33DFDF20D361CB00ADD378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D33DFDE20D361CB00ADD378 /* Assets.xcassets */; };
 		0D33DFE220D361CB00ADD378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D33DFE020D361CB00ADD378 /* LaunchScreen.storyboard */; };
+		0D33DFEA20D3623100ADD378 /* GenreButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D33DFE920D3623100ADD378 /* GenreButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D33DFD420D361C900ADD378 /* Project - Mini Music Player App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project - Mini Music Player App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D33DFD720D361C900ADD378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D33DFD920D361C900ADD378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D33DFDC20D361C900ADD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D33DFDE20D361CB00ADD378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D33DFE120D361CB00ADD378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D33DFE320D361CB00ADD378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D33DFE920D3623100ADD378 /* GenreButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				0D33DFD720D361C900ADD378 /* AppDelegate.swift */,
-				0D33DFD920D361C900ADD378 /* ViewController.swift */,
 				0D33DFDB20D361C900ADD378 /* Main.storyboard */,
 				0D33DFDE20D361CB00ADD378 /* Assets.xcassets */,
 				0D33DFE020D361CB00ADD378 /* LaunchScreen.storyboard */,
 				0D33DFE320D361CB00ADD378 /* Info.plist */,
+				0D33DFE920D3623100ADD378 /* GenreButtonViewController.swift */,
 			);
 			path = "Project - Mini Music Player App";
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D33DFDA20D361C900ADD378 /* ViewController.swift in Sources */,
+				0D33DFEA20D3623100ADD378 /* GenreButtonViewController.swift in Sources */,
 				0D33DFD820D361C900ADD378 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +282,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Project - Mini Music Player App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Project - Mini Music Player App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
