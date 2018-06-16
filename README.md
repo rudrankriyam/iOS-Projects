@@ -8,8 +8,8 @@ MOST of the projects are work in progress, and should be completed by the end of
 
 ## Learning Resources 
  
-* [iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp](https://www.udemy.com/ios-11-app-development-bootcamp)
-* [iOS 11 & Swift 4: From Beginner to Paid Professional™](https://www.udemy.com/devslopes-ios11)
+* [Udemy - iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp](https://www.udemy.com/ios-11-app-development-bootcamp)
+* [Udemy - iOS 11 & Swift 4: From Beginner to Paid Professional™](https://www.udemy.com/devslopes-ios11)
 * [Developing iOS 11 Apps with Swift by Stanford](https://itunes.apple.com/us/course/developing-ios-11-apps-with-swift/id1309275316)
 * [Youtube - Sean Allen](https://www.youtube.com/channel/UCbTw29mcP12YlTt1EpUaVJw)
 * [Youtube - Let's Build That App](https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA)
