@@ -29,30 +29,29 @@ class ViewController: UIViewController {
     let story6 = "You bond with the murderer while crooning verses of \"Can you feel the love tonight\". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: \"Try the pier.\""
     
     
-    // UI Elements linked to the storyboard
-    @IBOutlet weak var topButton: UIButton!         // Has TAG = 1
-    @IBOutlet weak var bottomButton: UIButton!      // Has TAG = 2
+    @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var bottomButton: UIButton!
     @IBOutlet weak var storyTextView: UILabel!
-    
-    // TODO Step 5: Initialise instance variables here
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
-        
+        storyTextView.text = story1
+        topButton.setTitle(answer1a, for: .normal)
+        bottomButton.setTitle(answer1b, for: .normal)
     }
 
-    
-    // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
     
-        // TODO Step 4: Write an IF-Statement to update the views
-                
+        if sender.tag == 1 {
+            storyTextView.text = story3
+            topButton.setTitle(answer3a, for: .normal)
+            bottomButton.setTitle(answer3b, for: .normal)
+        } else if sender.tag == 2 {
+            storyTextView.text = story2
+            topButton.setTitle(answer2a, for: .normal)
+            bottomButton.setTitle(answer2b, for: .normal)
+        }
         // TODO Step 6: Modify the IF-Statement to complete the story
         
     
