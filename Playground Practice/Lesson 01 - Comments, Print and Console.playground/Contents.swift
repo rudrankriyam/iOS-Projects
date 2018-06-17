@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
 // Lesson 1 - Comments, Print and Console
-// iOS 11 & Swit 4 - The Complete iOS App Development Bootcamp
+// iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp
 
 import UIKit
 
@@ -9,4 +9,10 @@ import UIKit
  comments
  */
 
-var str = "Hello, playground"
+var monsterHealth = 19
+
+monsterHealth = monsterHealth + 22
+
+monsterHealth = monsterHealth / 2
+
+print(monsterHealth)
