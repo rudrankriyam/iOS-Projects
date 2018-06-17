@@ -103,7 +103,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "London App Brewery";
+				ORGANIZATIONNAME = "iOS-Projects";
 				TargetAttributes = {
 					EBB1C73A1B9633A60011F5C3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -285,7 +285,7 @@
 				INFOPLIST_FILE = Destini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourName.Destini;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-Projects.Project---Destini-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -299,7 +299,7 @@
 				INFOPLIST_FILE = Destini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourName.Destini;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-Projects.Project---Destini-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
