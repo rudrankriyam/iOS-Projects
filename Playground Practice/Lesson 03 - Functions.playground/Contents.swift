@@ -1,4 +1,4 @@
-//: Playground - noun: a place where people can play
+import UIKit
 
 // Lesson 3 - Functions
 // iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp
