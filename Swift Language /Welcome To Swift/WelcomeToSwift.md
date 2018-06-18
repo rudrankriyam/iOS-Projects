@@ -4,6 +4,6 @@
 
 ## WELCOME TO SWIFT
 
-## LANGUAGE GUIDE
-
-## LANGUAGE REFERENCE
+- [ ] About Swift
+- [ ] Version Compatibility
+- [ ] A Swift Tour
