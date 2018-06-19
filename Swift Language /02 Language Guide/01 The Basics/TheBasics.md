@@ -1,12 +1,12 @@
 # The Basics
 
-- [ ] Constants and Variables
-- [ ] Comments
-- [ ] Semicolons
-- [ ] Integers
-- [ ] Floating-Point Numbers
-- [ ] Type Safety and Type Inference
-- [ ] Numeric Literals
+- [x] Constants and Variables
+- [x] Comments
+- [x] Semicolons
+- [x] Integers
+- [x] Floating-Point Numbers
+- [x] Type Safety and Type Inference
+- [x] Numeric Literals
 - [ ] Numeric Type Conversion
 - [ ] Type Aliases
 - [ ] Booleans
