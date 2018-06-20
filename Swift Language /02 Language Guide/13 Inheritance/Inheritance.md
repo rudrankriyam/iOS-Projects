@@ -1,6 +1,6 @@
 # Inheritance
 
-- [ ] Defining a Base Class
-- [ ] Subclassing
-- [ ] Overriding
-- [ ] Preventing Overrides
+- [x] Defining a Base Class
+- [x] Subclassing
+- [x] Overriding
+- [x] Preventing Overrides
