@@ -1,5 +1,11 @@
-# The Swift Programming Language
+# Basic Operators
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Basic Operators
+- [ ] Terminology
+- [ ] Assignment Operator
+- [ ] Arithmetic Operators
+- [ ] Compound Assignment Operators
+- [ ] Comparison Operators
+- [ ] Ternary Conditional Operator
+- [ ] Nil-Coalescing Operator
+- [ ] Range Operators
+- [ ] Logical Operators
