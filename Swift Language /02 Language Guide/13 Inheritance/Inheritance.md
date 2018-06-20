@@ -1,5 +1,6 @@
-# The Swift Programming Language
+# Inheritance
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Inheritance
+- [ ] Defining a Base Class
+- [ ] Subclassing
+- [ ] Overriding
+- [ ] Preventing Overrides
