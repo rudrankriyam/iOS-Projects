@@ -1,5 +1,7 @@
-# The Swift Programming Language
+# Advanced Operators
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Advanced Operators
+- [ ] Bitwise Operators
+- [ ] Overflow Operators
+- [ ] Precedence and Associativity
+- [ ] Operator Methods
+- [ ] Custom Operators
