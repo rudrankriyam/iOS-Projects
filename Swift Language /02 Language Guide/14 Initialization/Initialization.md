@@ -1,5 +1,10 @@
-# The Swift Programming Language
+# Initialization
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Initialization
+- [ ] Setting Initial Values for Stored Properties
+- [ ] Customizing Initialization
+- [ ] Default Initializers
+- [ ] Initializer Delegation for Value Types
+- [ ] Class Inheritance and Initialization
+- [ ] Failable Initializers
+- [ ] Required Initializers
+- [ ] Setting a Default Property Value with a Closure or Function
