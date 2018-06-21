@@ -1,5 +1,4 @@
-# The Swift Programming Language
+# Deinitialization
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Deinitialization
+- [ ] How Deinitialization Works
+- [ ] Deinitializers in Action
