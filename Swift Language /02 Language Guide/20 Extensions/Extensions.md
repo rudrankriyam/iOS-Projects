@@ -1,5 +1,8 @@
-# The Swift Programming Language
+# Extensions
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Extensions
+- [ ] Extension Syntax
+- [ ] Computed Properties
+- [ ] Initializers
+- [ ] Methods
+- [ ] Subscripts
+- [ ] Nested Types
