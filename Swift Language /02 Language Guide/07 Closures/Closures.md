@@ -1,5 +1,8 @@
-# The Swift Programming Language
+# Closures
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Closures
+- [ ] Closure Expressions
+- [ ] Trailing Closures
+- [ ] Capturing Values
+- [ ] Closures Are Reference Types
+- [ ] Escaping Closures
+- [ ] Autoclosures
