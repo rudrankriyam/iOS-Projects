@@ -1,5 +1,6 @@
-# The Swift Programming Language
+# Type Casting
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Type Casting
+- [ ] Defining a Class Hierarchy for Type Casting
+- [ ] Checking Type
+- [ ] Downcasting
+- [ ] Type Casting for Any and AnyObject
