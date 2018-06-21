@@ -1,5 +1,4 @@
-# The Swift Programming Language
+# Nested Types
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Nested Types
+- [ ] Nested Types in Action
+- [ ] Referring to Nested Types
