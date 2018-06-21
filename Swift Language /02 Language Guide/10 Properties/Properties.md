@@ -1,5 +1,7 @@
-# The Swift Programming Language
+# Properties
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Properties
+- [ ] Stored Properties
+- [ ] Computed Properties
+- [ ] Property Observers
+- [ ] Global and Local Variables
+- [ ] Type Properties
