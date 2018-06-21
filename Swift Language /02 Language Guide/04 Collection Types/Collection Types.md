@@ -1,5 +1,7 @@
-# The Swift Programming Language
+# Collection Types
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Collection Types
+- [ ] Mutability of Collections
+- [ ] Arrays
+- [ ] Sets
+- [ ] Performing Set Operations
+- [ ] Dictionaries
