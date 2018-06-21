@@ -1,5 +1,5 @@
-# The Swift Programming Language
+# Subscripts
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Subscripts
+- [ ] Subscript Syntax
+- [ ] Subscript Usage
+- [ ] Subscript Options
