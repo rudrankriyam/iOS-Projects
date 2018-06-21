@@ -1,5 +1,6 @@
-# The Swift Programming Language
+# Memory Safety
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Memory Safety
+- [ ] Understanding Conflicting Access to Memory
+- [ ] Conflicting Access to In-Out Parameters
+- [ ] Conflicting Access to self in Methods
+- [ ] Conflicting Access to Properties
