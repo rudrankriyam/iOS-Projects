@@ -1,5 +1,7 @@
-# The Swift Programming Language
+# Functions 
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Functions 
+- [ ] Defining and Calling Functions
+- [ ] Function Parameters and Return Values
+- [ ] Function Argument Labels and Parameter Names
+- [ ] Function Types
+- [ ] Nested Functions
