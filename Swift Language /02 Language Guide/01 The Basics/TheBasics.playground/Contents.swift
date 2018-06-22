@@ -151,4 +151,67 @@ print("The status code is \(http200Status.description)")
 
 // Optionals
 
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+// convertedNumber is inferred to be of type "Int?", or "optional Int"
 
+// nil
+
+var serverResponseCode: Int? = 404
+// serverResponseCode contains an actual Int value of 404
+serverResponseCode = nil
+// serverResponseCode now contains no value
+
+var surveryAnswer: String?
+// surveyAnswer is automatically set to nil
+
+// If Statements and Forced Unwrapping
+
+if convertedNumber != nil {
+    print("convertedNumber contains some intger value.")
+    print("convertedNumber has an integer value of \(convertedNumber!).")
+}
+
+// Optional Binding
+
+if let actualNumber = Int(possibleNumber) {
+    print("\"\(possibleNumber)\" has an integer value of \(actualNumber)")
+} else {
+    print("\"\(possibleNumber)\" could not be converted to an integer")
+}
+
+// Prints ""123" has an integer value of 123"
+
+if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+    print("\(firstNumber) < \(secondNumber) < 100")
+}
+// Prints "4 < 42 < 100"
+
+if let firstNumberSecondWay = Int("4") {
+    if let secondNumberSecondWay = Int("42") {
+        if firstNumberSecondWay < secondNumberSecondWay && secondNumberSecondWay < 100 {
+            print("\(firstNumberSecondWay) < \(secondNumberSecondWay) < 100")
+        }
+    }
+}
+// Prints "4 < 42 < 100"
+
+// Implicitly Unwrapped Optionals
+
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString! // requires an exclamation mark
+
+let assumedString: String! = "An implicity unwrapped optioinal string."
+let implicitString: String = assumedString // no need for an exclamation mark
+
+if assumedString != nil {
+    print(assumedString!)
+}
+// Prints "An implicitly unwrapped optional string."
+
+if let definiteString = assumedString {
+    print(definiteString)
+}
+// Prints "An implicitly unwrapped optional string."
+
+// Error Handling
