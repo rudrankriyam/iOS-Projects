@@ -1,5 +1,5 @@
-# The Swift Programming Language
+# Structures and Classes
 
-[Swift 4.2](https://docs.swift.org/swift-book)
-
-## Structures and Classes
+- [ ] Comparing Structures and Classes
+- [ ] Structures and Enumerations Are Value Types
+- [ ] Classes Are Reference Types
