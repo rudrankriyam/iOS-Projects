@@ -6,6 +6,11 @@ This repository contains iOS applications for learning purposes.
 
 MOST of the projects are work in progress, and should be completed by the end of the summer.
 
+## Swift Language
+
+I am learning the Swift 4.2 language through the [Official Documentation](https://docs.swift.org/swift-book/).
+The implementation of it can be found in the folder [Swift Language.](https://github.com/snuff4/iOS-Projects/tree/master/Swift%20Language%20)
+
 ## Learning Resources 
  
 * [Udemy - iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp](https://www.udemy.com/ios-11-app-development-bootcamp)
