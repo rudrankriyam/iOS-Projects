@@ -201,4 +201,63 @@ print("Result: \(mathFunction(2,3))")
 let anotherMathFunction = addTwoInts
 // anotherMathFunction is inferred to be of type (Int, Int) -> Int
 
+// Function Types as Parameter Types
+
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("Result: \(mathFunction(a, b))")
+}
+printMathResult(addTwoInts, 3, 5)
+// Prints "Result: 8"
+
+// Function Types as Return tpyes
+
+func stepForward(_ input: Int) -> Int {
+    return input + 1
+}
+
+func stepBackward(_ input: Int) -> Int {
+    return input - 1
+}
+
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    return backward ? stepForward : stepForward
+}
+
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero now refers to the stepBackward() function
+
+print("Counting to zero:")
+// Counting to zero:
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("Zero!")
+// 3...
+// 2...
+// 1...
+// Zero!
+
+// Nested Functions
+
+func chooseStepFunctionNested(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackWard(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackWard : stepForward
+}
+var currentValueNested = -4
+let moveNearerToZeroNested = chooseStepFunctionNested(backward: currentValue > 0)
+// moveNearerToZero now refers to the neseted stepForward() function)
+
+while currentValueNested != 0 {
+    print("\(currentValueNested)... ")
+    currentValueNested = moveNearerToZeroNested(currentValueNested)
+}
+print("Zero!")
+// -4...
+// -3...
+// -2...
+// -1...
+// Zero!
 
