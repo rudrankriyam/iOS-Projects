@@ -106,5 +106,57 @@ print("min is \(boundsSecondVersion.min) and max is \(boundsSecondVersion.max)")
 
 // Function Argument Labels and Parameter Names
 
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    // In the function body, firstParameterName and secondParameterName
+    // refer to the argument values for the first and second parameters.
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
 
+// Specifying Argument Labels
 
+func someFunction(argumentLabel parameterName: Int) {
+    // IN the function body, parameterName refers to the argument value for that parameter
+}
+
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)! Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+// Prints "Hello Bill! Glad you could visit from Cupertino."
+
+//Omitting Argument Labels
+
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // In the function body, firstParameterName and secondParameterName
+    // refer to the argument values for the first and second parameters.
+}
+someFunction(1, secondParameterName: 2)
+
+// Defulat Parameter Values
+
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+    // If you omt the second argument when calling this function, then
+    // the value of parameterWithDefault is 12 inside the function body.
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6)
+// parameterWithDefauly is 6
+someFunction(parameterWithoutDefault: 4)
+// parameterWithDefault is 12
+
+// Variadic Parameters
+
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+// returns 3.0, which is the arithmetic mean of these five numbers
+arithmeticMean(3, 8.25, 18.75)
+// returns 10.0, which is the arithmetic mean of these three numbers
+
+// A function may have AT MOST one variadic parameter
+
+// In-Out Parameters
