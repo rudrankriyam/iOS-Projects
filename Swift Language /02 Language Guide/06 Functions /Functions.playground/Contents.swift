@@ -160,3 +160,45 @@ arithmeticMean(3, 8.25, 18.75)
 // A function may have AT MOST one variadic parameter
 
 // In-Out Parameters
+
+// In-out parameters cannot have default values, and variadic parameters cannot be marked as inout.
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+// Prints "someInt is now 107, and anotherInt is now 3"
+
+// Function Types
+
+func addTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+func multiplyTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a * b
+}
+
+func printHelloWorld() {
+    print("Hello, World!")
+}
+
+// Using Function Types
+
+var mathFunction: (Int, Int) -> Int = addTwoInts
+
+print("Result: \(mathFunction(2,3))")
+// Prints "Result: 5"
+
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2,3))")
+// Prints "Result: 6"
+
+let anotherMathFunction = addTwoInts
+// anotherMathFunction is inferred to be of type (Int, Int) -> Int
+
+
