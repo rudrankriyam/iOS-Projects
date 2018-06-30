@@ -28,4 +28,57 @@ let (x,y) = (1,2)
 9 % 4 // equals 1
 -9 % 4 // equals -1
 
+// Unary Minus Operator
 
+let three = 3
+let minusThree = -three // minusThree equals -3
+let plusThree = -minusThree // plusThree equals 3
+
+// Unary Plus Operator
+
+let minusSix = -6
+let alsoMinusSix = +minusSix // alsoMinusSix equals -6
+
+// Compound Assignment Operators
+
+a = 1
+a += 2
+// a is now equal to 3
+
+// Comparison Operators
+
+1 == 1
+2 != 1
+2 > 1
+1 < 2
+1 >= 1
+2 <= 1
+
+let name = "world"
+if name == "world" {
+    print("Hello, World!")
+} else {
+    print("I'm sorry \(name), but I don't recognize you")
+}
+
+(1, "Zebra") < (2, "Apple")
+(3, "Apple") < (3, "Bird")
+(4, "Dog") == (4, "Dog")
+
+("Blue", -1) < ("Purple", 1)
+// ("Blue", false) < ("Purple", true) Error because < can't compare Boolean values
+
+// Ternary Conditional Operator
+
+let question = true
+if question {
+    // answer 1
+} else {
+    // answer2
+}
+
+let contentHeight = 40
+let hasHeader = true
+
+
+let contentHeeight
