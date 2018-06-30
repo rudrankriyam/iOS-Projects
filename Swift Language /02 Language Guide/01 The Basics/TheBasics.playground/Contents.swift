@@ -227,6 +227,23 @@ do {
     // an error was thrown
 }
 
+enum SandwichError {
+    case outOfCleanDishes
+    case missingIngredients()
+}
+
+func eatASandwich() {
+    // ...
+}
+
+func washDishes() {
+    // ...
+}
+
+func buyGroceries(_: String) {
+    // ...
+}
+
 func makeASandwich() throws {
     // ...
 }
@@ -236,4 +253,10 @@ do {
     eatASandwich()
 } catch SandwichError.outOfCleanDishes {
     washDishes()
+} catch SandwichError.missingIngredients(let ingredients) {
+    buyGroceries(_: )
 }
+
+// Assertions and Preconditions
+
+
