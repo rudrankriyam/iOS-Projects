@@ -7,10 +7,10 @@
 - [x] Floating-Point Numbers
 - [x] Type Safety and Type Inference
 - [x] Numeric Literals
-- [ ] Numeric Type Conversion
-- [ ] Type Aliases
-- [ ] Booleans
-- [ ] Tuples
-- [ ] Optionals
-- [ ] Error Handling
-- [ ] Assertions and Preconditions
+- [x] Numeric Type Conversion
+- [x] Type Aliases
+- [x] Booleans
+- [x] Tuples
+- [x] Optionals
+- [x] Error Handling
+- [x] Assertions and Preconditions
