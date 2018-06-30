@@ -79,6 +79,21 @@ if question {
 
 let contentHeight = 40
 let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+// rowHeight is equal to 90
 
+let contentHeightIfElse = 40
+let hasHeaderIfElse = true
+let rowHeightIfElse: Int
+if hasHeaderIfElse {
+    rowHeightIfElse = contentHeightIfElse + 50
+} else {
+    rowHeightIfElse = contentHeightIfElse + 20
+}
+// rowHeight is equal to 90
 
-let contentHeeight
+// Nil-Coalescing Operator
+
+// a != nil ? a! : b
+
+let defaultColorName = "Red"
