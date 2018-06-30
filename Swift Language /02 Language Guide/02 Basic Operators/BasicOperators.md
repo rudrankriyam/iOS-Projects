@@ -1,8 +1,8 @@
 # Basic Operators
 
-- [ ] Terminology
-- [ ] Assignment Operator
-- [ ] Arithmetic Operators
+- [x] Terminology
+- [x] Assignment Operator
+- [x] Arithmetic Operators
 - [ ] Compound Assignment Operators
 - [ ] Comparison Operators
 - [ ] Ternary Conditional Operator
