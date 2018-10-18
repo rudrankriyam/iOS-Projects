@@ -4,7 +4,7 @@ Hi! I am [Rudrank Riyam](https://www.linkedin.com/in/rudrankriyam/), studying in
 
 This repository contains iOS applications for learning purposes.
 
-MOST of the projects are work in progress, and should be completed by the end of the summer.
+MOST of the projects are work in progress, and should be completed by the end of the winter.
 
 ## Swift Language
 
