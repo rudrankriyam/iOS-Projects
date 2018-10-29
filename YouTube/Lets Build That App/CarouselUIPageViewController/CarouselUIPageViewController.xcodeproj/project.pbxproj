@@ -11,6 +11,7 @@
 		0DED0EEA2186EA240090F52A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DED0EE92186EA240090F52A /* ViewController.swift */; };
 		0DED0EEF2186EA290090F52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DED0EEE2186EA290090F52A /* Assets.xcassets */; };
 		0DED0EF22186EA290090F52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DED0EF02186EA290090F52A /* LaunchScreen.storyboard */; };
+		0DED0EFA2186EF9A0090F52A /* ProjectorPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DED0EF92186EF9A0090F52A /* ProjectorPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0DED0EEE2186EA290090F52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DED0EF12186EA290090F52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DED0EF32186EA290090F52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DED0EF92186EF9A0090F52A /* ProjectorPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectorPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				0DED0EEE2186EA290090F52A /* Assets.xcassets */,
 				0DED0EF02186EA290090F52A /* LaunchScreen.storyboard */,
 				0DED0EF32186EA290090F52A /* Info.plist */,
+				0DED0EF92186EF9A0090F52A /* ProjectorPageViewController.swift */,
 			);
 			path = CarouselUIPageViewController;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			files = (
 				0DED0EEA2186EA240090F52A /* ViewController.swift in Sources */,
 				0DED0EE82186EA240090F52A /* AppDelegate.swift in Sources */,
+				0DED0EFA2186EF9A0090F52A /* ProjectorPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
