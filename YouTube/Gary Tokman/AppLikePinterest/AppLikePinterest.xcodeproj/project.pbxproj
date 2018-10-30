@@ -12,6 +12,7 @@
 		0DED0F2B2188D3340090F52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DED0F292188D3340090F52A /* Main.storyboard */; };
 		0DED0F2D2188D3360090F52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DED0F2C2188D3360090F52A /* Assets.xcassets */; };
 		0DED0F302188D3360090F52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DED0F2E2188D3360090F52A /* LaunchScreen.storyboard */; };
+		0DED0F392188D93F0090F52A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DED0F382188D93F0090F52A /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0DED0F2C2188D3360090F52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DED0F2F2188D3360090F52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DED0F312188D3360090F52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DED0F382188D93F0090F52A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		0DED0F242188D3340090F52A /* AppLikePinterest */ = {
 			isa = PBXGroup;
 			children = (
+				0DED0F372188D9230090F52A /* Views */,
 				0DED0F252188D3340090F52A /* AppDelegate.swift */,
 				0DED0F272188D3340090F52A /* ViewController.swift */,
 				0DED0F292188D3340090F52A /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				0DED0F312188D3360090F52A /* Info.plist */,
 			);
 			path = AppLikePinterest;
+			sourceTree = "<group>";
+		};
+		0DED0F372188D9230090F52A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DED0F382188D93F0090F52A /* PhotoCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DED0F282188D3340090F52A /* ViewController.swift in Sources */,
+				0DED0F392188D93F0090F52A /* PhotoCell.swift in Sources */,
 				0DED0F262188D3340090F52A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +294,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YQZQG7N4WG;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppLikePinterest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Projects.AppLikePinterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +313,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YQZQG7N4WG;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppLikePinterest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Projects.AppLikePinterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
