@@ -13,14 +13,13 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         collectionView?.backgroundColor = UIColor(white: 0.90, alpha: 1)
+        
         
         collectionView?.alwaysBounceVertical = true
         
-        self.navigationController?.navigationBar.topItem?.title = "Facebook Feed"
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor.blue
+        navigationItem.title = "Facebook Feed"
         
         collectionView.register(FeedCell.self, forCellWithReuseIdentifier: cellId)
     }
@@ -55,15 +54,22 @@ class FeedCell: UICollectionViewCell {
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sample Text"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.numberOfLines = 2
+        
+        let attributedText = NSMutableAttributedString(string: "Mark Zuckerberg", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
+        
+        attributedText.append(NSAttributedString(string: "\nDecember 18 • San Francisco •", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray]))
+        
+        let paragraphStyle = NSParagraphStyle()
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.count))
+        label.attributedText = attributedText
         return label
     }()
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = UIColor.red
+        imageView.image = UIImage(named: "zuckprofile")
         return imageView
     }()
     
