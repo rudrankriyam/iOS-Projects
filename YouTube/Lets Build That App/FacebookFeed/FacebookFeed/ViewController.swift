@@ -9,10 +9,28 @@
 import UIKit
 
 let cellId = "cellId"
+
+class Post {
+    
+    var name: String?
+    var statusText: String?
+}
+
 class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let postMark = Post()
+        postMark.name = "Mark Zuckerberg"
+        
+        let postSteve = Post()
+        postSteve.name = "Steve Jobs"
+        
+        posts.append(postMark)
+        posts.append(postSteve)
                 
         collectionView?.backgroundColor = UIColor(white: 0.90, alpha: 1)
         
@@ -24,12 +42,15 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-    }
+        let feedCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! FeedCell
+        
+        feedCell.post = posts[indexPath.item]
+        return feedCell
+}
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 400)
@@ -37,6 +58,28 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
 }
 
 class FeedCell: UICollectionViewCell {
+    
+    var post: Post? {
+        didSet {
+            
+            if let name = post?.name {
+            
+            let attributedText = NSMutableAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
+            
+            attributedText.append(NSAttributedString(string: "\nDecember 18 • San Francisco • ", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 155, green: 161, blue: 171)]))
+            
+            let paragraphStyle = NSParagraphStyle()
+            attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.count))
+            
+            let attachment = NSTextAttachment()
+            attachment.image = UIImage(named: "globe_small")
+            attachment.bounds = CGRect.init(x: 0,y: -2,width: 12,height: 12)
+            attributedText.append(NSAttributedString(attachment: attachment))
+            
+            nameLabel.attributedText = attributedText
+            }
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,20 +94,6 @@ class FeedCell: UICollectionViewCell {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        
-        let attributedText = NSMutableAttributedString(string: "Mark Zuckerberg", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
-        
-        attributedText.append(NSAttributedString(string: "\nDecember 18 • San Francisco • ", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 155, green: 161, blue: 171)]))
-        
-        let paragraphStyle = NSParagraphStyle()
-        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.count))
-        
-        let attachment = NSTextAttachment()
-        attachment.image = UIImage(named: "globe_small")
-        attachment.bounds = CGRect.init(x: 0,y: -2,width: 12,height: 12)
-        attributedText.append(NSAttributedString(attachment: attachment))
-        
-        label.attributedText = attributedText
         return label
     }()
     
