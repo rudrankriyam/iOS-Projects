@@ -19,6 +19,14 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: Flow Layout Delegate
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+    }
+}
+
 // MARK: Data Source
 
 extension ViewController: UICollectionViewDataSource {
@@ -27,7 +35,11 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
+        
+        //let image = images[indexPath.item]
+        //cell.imageView.image = image
+        
         
         return cell
     }
