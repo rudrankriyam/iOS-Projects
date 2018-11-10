@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0DB75B5B21975BC700B9F777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75B5A21975BC700B9F777 /* AppDelegate.swift */; };
 		0DB75B5D21975BC700B9F777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75B5C21975BC700B9F777 /* ViewController.swift */; };
-		0DB75B6021975BC700B9F777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75B5E21975BC700B9F777 /* Main.storyboard */; };
 		0DB75B6221975BCA00B9F777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75B6121975BCA00B9F777 /* Assets.xcassets */; };
 		0DB75B6521975BCA00B9F777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75B6321975BCA00B9F777 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		0DB75B5721975BC700B9F777 /* CollectionViewProgrammatically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewProgrammatically.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB75B5A21975BC700B9F777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB75B5C21975BC700B9F777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0DB75B5F21975BC700B9F777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DB75B6121975BCA00B9F777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB75B6421975BCA00B9F777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB75B6621975BCA00B9F777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				0DB75B5A21975BC700B9F777 /* AppDelegate.swift */,
 				0DB75B5C21975BC700B9F777 /* ViewController.swift */,
-				0DB75B5E21975BC700B9F777 /* Main.storyboard */,
 				0DB75B6121975BCA00B9F777 /* Assets.xcassets */,
 				0DB75B6321975BCA00B9F777 /* LaunchScreen.storyboard */,
 				0DB75B6621975BCA00B9F777 /* Info.plist */,
@@ -124,7 +121,6 @@
 			files = (
 				0DB75B6521975BCA00B9F777 /* LaunchScreen.storyboard in Resources */,
 				0DB75B6221975BCA00B9F777 /* Assets.xcassets in Resources */,
-				0DB75B6021975BC700B9F777 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0DB75B5E21975BC700B9F777 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0DB75B5F21975BC700B9F777 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0DB75B6321975BCA00B9F777 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,7 +270,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CollectionViewProgrammatically/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +279,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-Projects.CollectionViewProgrammatically";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +289,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CollectionViewProgrammatically/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-Projects.CollectionViewProgrammatically";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
