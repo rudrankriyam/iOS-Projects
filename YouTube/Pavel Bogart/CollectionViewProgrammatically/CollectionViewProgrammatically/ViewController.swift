@@ -11,6 +11,26 @@ import UIKit
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     let cellId = "cellId"
+    
+    let teams = [Team(image: "arsenal", name: "arsenal"),
+                 Team(image: "chelsea", name: "Chelsea"),
+                 Team(image: "everton", name: "Everton"),
+                 Team(image: "leicester", name: "Leicester"),
+                 Team(image: "liverpool", name: "Liverpool"),
+                 Team(image: "mu", name: "M United"),
+                 Team(image: "mc", name: "M City"),
+                 Team(image: "newcastle", name: "Newcastle"),
+                 Team(image: "tottenham", name: "Tottenham"),
+                 Team(image: "arsenal", name: "arsenal"),
+                 Team(image: "chelsea", name: "Chelsea"),
+                 Team(image: "everton", name: "Everton"),
+                 Team(image: "leicester", name: "Leicester"),
+                 Team(image: "liverpool", name: "Liverpool"),
+                 Team(image: "mu", name: "M United"),
+                 Team(image: "mc", name: "M City"),
+                 Team(image: "newcastle", name: "Newcastle"),
+                 Team(image: "tottenham", name: "Tottenham")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +54,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (view.frame.width / 2) - 16, height: 100)
+        return CGSize(width: (view.frame.width / 3) - 16, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -47,6 +67,7 @@ class TeamCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        setCellShadow()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -64,12 +85,25 @@ class TeamCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Name"
         label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         return label
     }()
     
     func setup() {
         self.backgroundColor = UIColor.green
+        
+        self.addSubview(teamImageView)
+        self.addSubview(teamNameLabel)
+        
+        teamImageView.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: 0, height: 50)
+        teamNameLabel.anchor(top: teamImageView.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
+        
     }
+}
+
+struct Team {
+    let image: String?
+    let name: String?
 }
 
