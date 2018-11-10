@@ -12,6 +12,8 @@
 		0DB75B6221975BCA00B9F777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75B6121975BCA00B9F777 /* Assets.xcassets */; };
 		0DB75B6521975BCA00B9F777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75B6321975BCA00B9F777 /* LaunchScreen.storyboard */; };
 		0DB75B6D219766DE00B9F777 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75B6C219766DE00B9F777 /* Extensions.swift */; };
+		0DB75B6F2197718C00B9F777 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75B6E2197718C00B9F777 /* TeamCell.swift */; };
+		0DB75B71219771BD00B9F777 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75B70219771BD00B9F777 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0DB75B6421975BCA00B9F777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB75B6621975BCA00B9F777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB75B6C219766DE00B9F777 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0DB75B6E2197718C00B9F777 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		0DB75B70219771BD00B9F777 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0DB75B6121975BCA00B9F777 /* Assets.xcassets */,
 				0DB75B6321975BCA00B9F777 /* LaunchScreen.storyboard */,
 				0DB75B6621975BCA00B9F777 /* Info.plist */,
+				0DB75B6E2197718C00B9F777 /* TeamCell.swift */,
+				0DB75B70219771BD00B9F777 /* Team.swift */,
 			);
 			path = CollectionViewProgrammatically;
 			sourceTree = "<group>";
@@ -134,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB75B6F2197718C00B9F777 /* TeamCell.swift in Sources */,
 				0DB75B5D21975BC700B9F777 /* ViewController.swift in Sources */,
 				0DB75B6D219766DE00B9F777 /* Extensions.swift in Sources */,
+				0DB75B71219771BD00B9F777 /* Team.swift in Sources */,
 				0DB75B5B21975BC700B9F777 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

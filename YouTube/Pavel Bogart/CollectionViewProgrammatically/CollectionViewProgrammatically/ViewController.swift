@@ -34,76 +34,28 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.backgroundColor = UIColor.init(red: 44/255, green: 57/255, blue: 95/255, alpha: 1)
-        
-        navigationItem.title = "Teams"
-        navigationController?.navigationBar.barTintColor = UIColor.black
-        
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
+        collectionView.backgroundColor = UIColor.white
+        navigationItem.title = "Categories"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
         
         collectionView.register(TeamCell.self, forCellWithReuseIdentifier: cellId)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return teams.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TeamCell
+        cell.team = teams[indexPath.item]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (view.frame.width / 3) - 16, height: 100)
+        return CGSize(width: (view.frame.width / 2) - 15, height: 150)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
-
-class TeamCell: UICollectionViewCell {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-        setCellShadow()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let teamImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .green
-        return imageView
-    }()
-    
-    let teamNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Name"
-        label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.textAlignment = .center
-        return label
-    }()
-    
-    func setup() {
-        self.backgroundColor = UIColor.green
-        
-        self.addSubview(teamImageView)
-        self.addSubview(teamNameLabel)
-        
-        teamImageView.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: 0, height: 50)
-        teamNameLabel.anchor(top: teamImageView.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
-        
-    }
-}
-
-struct Team {
-    let image: String?
-    let name: String?
-}
-
