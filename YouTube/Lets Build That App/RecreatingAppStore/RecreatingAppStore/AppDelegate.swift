@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let layout = UICollectionViewFlowLayout()
         let featuredAppsController = FeaturedAppsViewController(collectionViewLayout: layout)
-        
+        featuredAppsController.navigationItem.title = "Featured"
         window?.rootViewController = UINavigationController(rootViewController: featuredAppsController)
         return true
     }
