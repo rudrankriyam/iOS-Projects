@@ -11,6 +11,8 @@ import UIKit
 let cellId = "cellId"
 
 class FeaturedAppsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    var appCategories: [AppCategory]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
