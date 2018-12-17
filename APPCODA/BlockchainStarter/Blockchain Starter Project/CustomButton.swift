@@ -2,8 +2,8 @@
 //  CustomButton.swift
 //  Views
 //
-//  Created by Sai Kambampati on 12/8/17.
-//  Copyright © 2017 SaiApps. All rights reserved.
+//  Created by Rudrank Riyam on 17/12/18.
+//  Copyright © 2018 iOS-Projects. All rights reserved.
 //
 
 import UIKit

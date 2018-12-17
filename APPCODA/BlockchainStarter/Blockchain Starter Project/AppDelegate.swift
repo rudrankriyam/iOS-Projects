@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Blockchain Starter Project
 //
-//  Created by Sai Kambampati on 4/29/18.
-//  Copyright © 2018 AppCoda. All rights reserved.
+//  Created by Rudrank Riyam on 17/12/18.
+//  Copyright © 2018 iOS-Projects. All rights reserved.
 //
 
 import UIKit
