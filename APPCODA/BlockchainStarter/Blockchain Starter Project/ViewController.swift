@@ -70,7 +70,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        transaction(from: "0000", to: "\(firstAccount)", amount: 50, type: "genesis")
+        transaction(from: "\(firstAccount)", to: "\(secondAccount)", amount: 10, type: "normal")
+        chainState()
+        self.invalidAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,21 +82,38 @@ class ViewController: UIViewController {
     }
 
     @IBAction func redMine(_ sender: Any) {
-        
+        transaction(from: "0000", to: "\(firstAccount)", amount: 100, type: "normal")
+        print("New block mined by: \(firstAccount)")
+        chainState()
     }
     
     @IBAction func blueMine(_ sender: Any) {
-        
+        transaction(from: "0000", to: "\(secondAccount)", amount: 100, type: "normal")
+        print("New block mined by: \(secondAccount)")
+        chainState()
     }
     
     @IBAction func redSend(_ sender: Any) {
-        
+        if redAmount.text == "" {
+            present(invalidAlert, animated: true, completion: nil)
+        } else {
+            transaction(from: "\(firstAccount)", to: "\(secondAccount)", amount: Int(redAmount.text!)!, type: "normal")
+            print("\(redAmount.text!) BTC sent from \(firstAccount) to \(secondAccount)")
+            chainState()
+            redAmount.text = ""
+        }
     }
     
     @IBAction func blueSend(_ sender: Any) {
-        
+        if blueAmount.text == "" {
+            present(invalidAlert, animated: true, completion: nil)
+        } else {
+            transaction(from: "\(secondAccount)", to: "\(firstAccount)", amount: Int(blueAmount.text!)!, type: "normal")
+            print("\(blueAmount.text!) BTC sent from \(secondAccount) to \(firstAccount)")
+            chainState()
+            blueAmount.text = ""
+        }
     }
-    
 }
 
 extension ViewController {
